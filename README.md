@@ -1,0 +1,1 @@
+Solis is a website for the energy drink company SOLIS. It was made for a highschool project where I had to come up with an energy drink idea, advertisments, products, website, and company events. Created by Tyler McDowell.
