@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+header img {
+	margin: 0;
+}
+
+.flavor-preview img {
+	width: 100%;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.flavors-bg {
+	background-image: url("../images/logos/STARS_BG.png")
+}
+
+/* Style rules for header */
+
+
+/* Style rules for nav */
+nav li a {
+	font-family: "Oxygen", sans-serif;
+	color: #000;
+}
+
+nav a:hover {
+	background-color: #252222;
+}
+
+nav h2 a {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff;
+}
+
+.navbar-brand {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand:hover {
+	background-color: #181616;
+}
+
+.hamburber {
+	border: none;
+}
+
+
+/* Style rules for main and content elements */
+main {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #000;
+	padding: .25rem 0;
+}
+
+h2 {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #000;
+	padding: .25rem 0;
+}
+
+h3 {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #FFF;
+	padding: .25rem 0;
+}
+
+.flavor-p {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #FFF;
+	padding: .25rem 0;
+}
+
+.flavor-p-dt {
+	font-family: "nasalization", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #FFF;
+	padding: .25rem 0;
+}
+
+p {
+	font-family: 'Oxygen', sans-serif;
+	color: #000;
+	padding: .5rem 0;
+}
+
+main p:last-child {
+	margin-bottom: 0;
+}
+
+a {
+	font-family: 'Oxygen', sans-serif;
+	color: #e87519;
+}
+
+.dyk {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: bold;
+}
+
+.main-bg {
+	background-color: #181616;
+}
+
+iframe {
+	width: auto;
+	height: auto;
+}
+
+/* Style rules for footer */
+footer a:hover {
+	background-color: #252222;
+}
+
+footer p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Style rules for classes and ids */
+.footer-nav {
+	font-family: 'Oxygen', sans-serif;
+}
+
+.border-brand {
+  border-color: #e87519 !important;
+}
+
+.bg-brand {
+  background-color: #e87519 !important;
+}
+
+.text-brand {
+  color: #e87519 !important;
+}
+
+.btn-brand {
+	background-color: #e87519 !important;
+	color: #FFF;
+}
+
+.btn-brand:hover {
+	background-color: #f57c1b !important;
+	color: #FFF;
+}
+
+.vert-banner {
+	max-width: 50%;
+}
+
+.carousel-inner img {
+	width: 25%;
+	padding: 0;
+}
+
+.limited-flavor {
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+.icons {
+	padding-left: .2em;
+	padding-right: .2em;
+}
+
+.desktop-form {
+	width: 60%;
+	text-align: left;
+}
+
+.flavor-info {
+	font-size: 1.3750em;
+}
+
+.myauto p, .myauto h1, .myauto h2, .myauto h3{
+	margin: 0;
+	padding: 0;
+}
+
+.container-orange {
+	background-color: rgba(232, 118, 25, 0.1);
+}
+
+.my-auto {
+	padding-right: 4rem;
+}
+
+.flavor-carousel {
+	margin-bottom: 518px
+}
+/* media query for tablet viewport */
+@media screen and (min-width: 800px), print {
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+	
+}
+
+/* media query for desktop viewport */
+@media screen and (min-width: 1015px), print{
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+	
+p {
+	font-size: 1.1250em;
+}
+}

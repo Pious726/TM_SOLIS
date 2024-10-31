@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* CSS Document */
+ .planets-wrapper {
+	 bottom: 0;
+	 height: 125px;
+	 margin: auto;
+	 position: relative;
+	 right: 0;
+	 top: 0;
+	 width: 100%;
+}
+ .mercury, .earth, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto {
+	 background-color: #76777a;
+	 border-radius: 100%;
+	 box-shadow: inset -3px -3px #696a6d;
+	 height: 40px;
+	 left: 190px;
+	 position: absolute;
+	 top: 42.5px;
+	 width: 40px;
+	 animation: mercuryJump 3.2s linear infinite;
+	 -webkit-animation: mercuryJump 3.2s linear infinite;
+	 -moz-animation: mercuryJump 3.2s linear infinite;
+	 -ms-animation: mercuryJump 3.2s linear infinite;
+	 -o-animation: mercuryJump 3.2s linear infinite;
+}
+ .mercury:before, .earth:before, .mars:before, .jupiter:before, .saturn:before, .uranus:before, .neptune:before, .pluto:before {
+	 background-color: #696a6d;
+	 border-radius: 100%;
+	 content: '';
+	 height: 7px;
+	 left: 6px;
+	 position: absolute;
+	 top: 23px;
+	 width: 7px;
+}
+ .mercury:after, .earth:after, .mars:after, .jupiter:after, .saturn:after, .uranus:after, .neptune:after, .pluto:after {
+	 background-color: #696a6d;
+	 border-radius: 100%;
+	 content: '';
+	 height: 5px;
+	 left: 20px;
+	 position: absolute;
+	 top: 6px;
+	 width: 5px;
+}
+.milkyway {
+	border-radius: 100%;
+	height: 75px;
+	left: 300px;
+	position: absolute;
+	top: 35px;
+	width: 75px;
+	animation: milkywayJump 2.73s -5.12s linear infinite;
+	 -webkit-animation: milkywayJump 2.73s -5.12s linear infinite;
+	 -moz-animation: milkywayJump 2.73s -5.12s linear infinite;
+	 -ms-animation: milkywayJump 2.73s -5.12s linear infinite;
+	 -o-animation: milkywayJump 2.73s -5.12s linear infinite;
+	background-image: url("../images/planets/milky-way000.png");
+	background-size: cover;
+	background-position: center;
+	background-image: no-repeat;
+}
+
+ .venus {
+	 border-radius: 100%;
+	 height: 55px;
+	 left: 402px;
+	 position: absolute;
+	 top: 35px;
+	 width: 55px;
+	 animation: venusJump 2.82s -2s linear infinite;
+	 -webkit-animation: venusJump 2.82s -2s linear infinite;
+	 -moz-animation: venusJump 2.82s -2s linear infinite;
+	 -ms-animation: venusJump 2.82s -2s linear infinite;
+	 -o-animation: venusJump 2.82s -2s linear infinite;
+	 background: linear-gradient(#db9374 5px, #ba592f 15px, #d1734b 25px, #e1a288 40px, #ba592f 45px);
+	 background: -webkit- linear-gradient(#db9374 5px, #ba592f 15px, #d1734b 25px, #e1a288 40px, #ba592f 45px);
+	 background: -moz- linear-gradient(#db9374 5px, #ba592f 15px, #d1734b 25px, #e1a288 40px, #ba592f 45px);
+	 background: -ms- linear-gradient(#db9374 5px, #ba592f 15px, #d1734b 25px, #e1a288 40px, #ba592f 45px);
+	 transform: rotate(30deg);
+	 -webkit-transform: rotate(30deg);
+	 -moz-transform: rotate(30deg);
+	 -ms-transform: rotate(30deg);
+}
+ .earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+	 background-color: #496282;
+	 box-shadow: inset -3px -3px #405672;
+	 height: 50px;
+	 left: 345px;
+	 top: 40px;
+	 width: 50px;
+	 animation: earthJump 2.76s -1.4s linear infinite;
+	 -webkit-animation: earthJump 2.76s -1.4s linear infinite;
+	 -moz-animation: earthJump 2.76s -1.4s linear infinite;
+	 -ms-animation: earthJump 2.76s -1.4s linear infinite;
+	 -o-animation: earthJump 2.76s -1.4s linear infinite;
+}
+ .earth:before, .mars:before, .jupiter:before, .saturn:before, .uranus:before, .neptune:before {
+	 background-color: #5e8249;
+	 border-radius: 100% 70% 100% 70%;
+	 content: '';
+	 height: 32px;
+	 left: 3px;
+	 position: absolute;
+	 top: 15px;
+	 width: 15px;
+	 transform: rotate(-30deg);
+	 -webkit-transform: rotate(-30deg);
+	 -moz-transform: rotate(-30deg);
+	 -ms-transform: rotate(-30deg);
+}
+ .earth:after, .mars:after, .jupiter:after, .saturn:after, .uranus:after, .neptune:after {
+	 background-color: #5e8249;
+	 border-radius: 100% 70% 100% 70%;
+	 content: '';
+	 height: 12px;
+	 left: 27px;
+	 position: absolute;
+	 top: 3px;
+	 width: 10px;
+	 transform: rotate(-45deg);
+	 -webkit-transform: rotate(-45deg);
+	 -moz-transform: rotate(-45deg);
+	 -ms-transform: rotate(-45deg);
+}
+ .mars {
+	 background-color: #c25447;
+	 box-shadow: inset -3px -3px #b4483c;
+	 height: 42px;
+	 left: 490px;
+	 top: 45px;
+	 width: 42px;
+	 animation: marsJump 2.89s -3.1s linear infinite;
+	 -webkit-animation: marsJump 2.89s -3.1s linear infinite;
+	 -moz-animation: marsJump 2.89s -3.1s linear infinite;
+	 -ms-animation: marsJump 2.89s -3.1s linear infinite;
+	 -o-animation: marsJump 2.89s -3.1s linear infinite;
+}
+ .mars:before {
+	 background-color: #a14135;
+	 border-radius: 100%;
+	 height: 12px;
+	 left: 20px;
+	 top: 23px;
+	 width: 12px;
+}
+ .mars:after {
+	 background-color: #a14135;
+	 border-radius: 100%;
+	 height: 9px;
+	 left: 5px;
+	 top: 10px;
+	 width: 9px;
+}
+ .jupiter {
+	 box-shadow: 0px 0px 0px;
+	 height: 80px;
+	 left: 555px;
+	 top: 25px;
+	 width: 80px;
+	 animation: jupiterJump 2.05s -4.32s linear infinite;
+	 -webkit-animation: jupiterJump 2.05s -4.32s linear infinite;
+	 -moz-animation: jupiterJump 2.05s -4.32s linear infinite;
+	 -ms-animation: jupiterJump 2.05s -4.32s linear infinite;
+	 -o-animation: jupiterJump 2.05s -4.32s linear infinite;
+	 background: linear-gradient(#e89150 5px, #f7d8c1 10px, #d16f1b 30px, #f7d8c1 50px, #d16f1b 55px, #f7d8c1 70px, #e89150 75px);
+	 background: -webkit- linear-gradient(#e89150 5px, #f7d8c1 10px, #d16f1b 30px, #f7d8c1 50px, #d16f1b 55px, #f7d8c1 70px, #e89150 75px);
+	 background: -moz- linear-gradient(#e89150 5px, #f7d8c1 10px, #d16f1b 30px, #f7d8c1 50px, #d16f1b 55px, #f7d8c1 70px, #e89150 75px);
+	 background: -ms- linear-gradient(#e89150 5px, #f7d8c1 10px, #d16f1b 30px, #f7d8c1 50px, #d16f1b 55px, #f7d8c1 70px, #e89150 75px);
+}
+ .jupiter:before, .jupiter:after {
+	 height: 0;
+}
+ .saturn, .uranus, .neptune {
+	 background-color: #d1aa5e;
+	 box-shadow: inset -3px -3px #bc8f36;
+	 height: 65px;
+	 left: 695px;
+	 top: 35px;
+	 width: 65px;
+	 animation: saturnJump 2.25s -2.87s linear infinite;
+	 -webkit-animation: saturnJump 2.25s -2.87s linear infinite;
+	 -moz-animation: saturnJump 2.25s -2.87s linear infinite;
+	 -ms-animation: saturnJump 2.25s -2.87s linear infinite;
+	 -o-animation: saturnJump 2.25s -2.87s linear infinite;
+}
+ .saturn:after, .uranus:after, .neptune:after {
+	 background-color: transparent;
+	 border-bottom: 10px solid #9c762d;
+	 border-left: 10px solid #9c762d;
+	 height: 55px;
+	 left: -5px;
+	 top: -3px;
+	 width: 55px;
+	 transform: rotate(-45deg) skew(65deg);
+	 -webkit-transform: rotate(-45deg) skew(65deg);
+	 -moz-transform: rotate(-45deg) skew(65deg);
+	 -ms-transform: rotate(-45deg) skew(65deg);
+}
+ .saturn:before, .uranus:before, .neptune:before {
+	 background-color: transparent;
+	 border-top: 10px solid #9c762d;
+	 border-right: 10px solid #9c762d;
+	 border-left: 0;
+	 border-bottom: 0;
+	 height: 55px;
+	 left: -5px;
+	 top: -3px;
+	 width: 55px;
+	 z-index: -1;
+	 transform: rotate(-45deg) skew(65deg);
+	 -webkit-transform: rotate(-45deg) skew(65deg);
+	 -moz-transform: rotate(-45deg) skew(65deg);
+	 -ms-transform: rotate(-45deg) skew(65deg);
+}
+ .uranus, .neptune {
+	 background-color: #9db1bf;
+	 box-shadow: inset -3px -3px #6f8ca1;
+	 height: 67px;
+	 left: 825px;
+	 top: 34px;
+	 width: 67px;
+	 animation: uranusJump 2.73s -5.12s linear infinite;
+	 -webkit-animation: uranusJump 2.73s -5.12s linear infinite;
+	 -moz-animation: uranusJump 2.73s -5.12s linear infinite;
+	 -ms-animation: uranusJump 2.73s -5.12s linear infinite;
+	 -o-animation: uranusJump 2.73s -5.12s linear infinite;
+}
+ .uranus:after, .neptune:after, .uranus:before, .neptune:before {
+	 border: 0;
+}
+ .neptune {
+	 background-color: #5870a8;
+	 box-shadow: inset -3px -3px #3d4e76;
+	 height: 60px;
+	 left: 940px;
+	 top: 38px;
+	 width: 60px;
+	 animation: neptuneJump 2.55s -5.77s linear infinite;
+	 -webkit-animation: neptuneJump 2.55s -5.77s linear infinite;
+	 -moz-animation: neptuneJump 2.55s -5.77s linear infinite;
+	 -ms-animation: neptuneJump 2.55s -5.77s linear infinite;
+	 -o-animation: neptuneJump 2.55s -5.77s linear infinite;
+}
+/* planet animations */
+@keyframes milkywayJump {
+	0% {
+		top: 34px;
+   }
+	30% {
+		top: 29px;
+   }
+	70% {
+		top: 39px;
+   }
+	100% {
+		top: 34px;
+   }
+}
+@-webkit-keyframes milkywayJump {
+	0% {
+		top: 34px;
+   }
+	30% {
+		top: 29px;
+   }
+	70% {
+		top: 39px;
+   }
+	100% {
+		top: 34px;
+   }
+}
+@-moz-keyframes milkywayJump {
+	0% {
+		top: 34px;
+   }
+	30% {
+		top: 29px;
+   }
+	70% {
+		top: 39px;
+   }
+	100% {
+		top: 34px;
+   }
+}
+@-ms-keyframes milkywayJump {
+	0% {
+		top: 34px;
+   }
+	30% {
+		top: 29px;
+   }
+	70% {
+		top: 39px;
+   }
+	100% {
+		top: 34px;
+   }
+}
+@keyframes venusJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+@-webkit-keyframes venusJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+@-moz-keyframes venusJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+@-ms-keyframes venusJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+ @keyframes marsJump {
+	 0% {
+		 top: 45px;
+	}
+	 30% {
+		 top: 40px;
+	}
+	 70% {
+		 top: 50px;
+	}
+	 100% {
+		 top: 45px;
+	}
+}
+ @-webkit-keyframes marsJump {
+	 0% {
+		 top: 45px;
+	}
+	 30% {
+		 top: 40px;
+	}
+	 70% {
+		 top: 50px;
+	}
+	 100% {
+		 top: 45px;
+	}
+}
+ @-moz-keyframes marsJump {
+	 0% {
+		 top: 45px;
+	}
+	 30% {
+		 top: 40px;
+	}
+	 70% {
+		 top: 50px;
+	}
+	 100% {
+		 top: 45px;
+	}
+}
+ @-ms-keyframes marsJump {
+	 0% {
+		 top: 45px;
+	}
+	 30% {
+		 top: 40px;
+	}
+	 70% {
+		 top: 50px;
+	}
+	 100% {
+		 top: 45px;
+	}
+}
+ @keyframes jupiterJump {
+	 0% {
+		 top: 25px;
+	}
+	 30% {
+		 top: 20px;
+	}
+	 70% {
+		 top: 30px;
+	}
+	 100% {
+		 top: 25px;
+	}
+}
+ @-webkit-keyframes jupiterJump {
+	 0% {
+		 top: 25px;
+	}
+	 30% {
+		 top: 20px;
+	}
+	 70% {
+		 top: 30px;
+	}
+	 100% {
+		 top: 25px;
+	}
+}
+ @-moz-keyframes jupiterJump {
+	 0% {
+		 top: 25px;
+	}
+	 30% {
+		 top: 20px;
+	}
+	 70% {
+		 top: 30px;
+	}
+	 100% {
+		 top: 25px;
+	}
+}
+ @-ms-keyframes jupiterJump {
+	 0% {
+		 top: 25px;
+	}
+	 30% {
+		 top: 20px;
+	}
+	 70% {
+		 top: 30px;
+	}
+	 100% {
+		 top: 25px;
+	}
+}
+ @keyframes saturnJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+ @-webkit-keyframes saturnJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+ @-moz-keyframes saturnJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+ @-ms-keyframes saturnJump {
+	 0% {
+		 top: 35px;
+	}
+	 30% {
+		 top: 30px;
+	}
+	 70% {
+		 top: 40px;
+	}
+	 100% {
+		 top: 35px;
+	}
+}
+ @keyframes uranusJump {
+	 0% {
+		 top: 34px;
+	}
+	 30% {
+		 top: 29px;
+	}
+	 70% {
+		 top: 39px;
+	}
+	 100% {
+		 top: 34px;
+	}
+}
+ @-webkit-keyframes uranusJump {
+	 0% {
+		 top: 34px;
+	}
+	 30% {
+		 top: 29px;
+	}
+	 70% {
+		 top: 39px;
+	}
+	 100% {
+		 top: 34px;
+	}
+}
+ @-moz-keyframes uranusJump {
+	 0% {
+		 top: 34px;
+	}
+	 30% {
+		 top: 29px;
+	}
+	 70% {
+		 top: 39px;
+	}
+	 100% {
+		 top: 34px;
+	}
+}
+ @-ms-keyframes uranusJump {
+	 0% {
+		 top: 34px;
+	}
+	 30% {
+		 top: 29px;
+	}
+	 70% {
+		 top: 39px;
+	}
+	 100% {
+		 top: 34px;
+	}
+}
+ @keyframes neptuneJump {
+	 0% {
+		 top: 38px;
+	}
+	 30% {
+		 top: 33px;
+	}
+	 70% {
+		 top: 43px;
+	}
+	 100% {
+		 top: 38px;
+	}
+}
+ @-webkit-keyframes neptuneJump {
+	 0% {
+		 top: 38px;
+	}
+	 30% {
+		 top: 33px;
+	}
+	 70% {
+		 top: 43px;
+	}
+	 100% {
+		 top: 38px;
+	}
+}
+ @-moz-keyframes neptuneJump {
+	 0% {
+		 top: 38px;
+	}
+	 30% {
+		 top: 33px;
+	}
+	 70% {
+		 top: 43px;
+	}
+	 100% {
+		 top: 38px;
+	}
+}
+ @-ms-keyframes neptuneJump {
+	 0% {
+		 top: 38px;
+	}
+	 30% {
+		 top: 33px;
+	}
+	 70% {
+		 top: 43px;
+	}
+	 100% {
+		 top: 38px;
+	}
+}
